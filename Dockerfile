@@ -4,4 +4,4 @@ RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime&&sed -i 's/deb.debia
 
 RUN apt-get install -y python3&&apt-get install -y python3-pip
 
-RUN mkdir -p ~/.pip&&touch ~/.pip/pip.conf&&echo "[global]\nindex-url = https://pypi.tuna.tsinghua.edu.cn/simple\n[install]\ntrusted-host = https://pypi.tuna.tsinghua.edu.cn" > ~/.pip/pip.conf&&pip3 install --upgrade pip
+RUN mkdir -p ~/.pip&&echo "[global]\nindex-url = https://pypi.tuna.tsinghua.edu.cn/simple\n[install]\ntrusted-host = https://pypi.tuna.tsinghua.edu.cn" > ~/.pip/pip.conf&&pip3 install --upgrade pip
