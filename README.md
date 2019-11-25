@@ -1,2 +1,2 @@
 # python3
-##基于debian10的创建python3开发环境镜像
+##基于debian10创建的python3开发环境镜像。
